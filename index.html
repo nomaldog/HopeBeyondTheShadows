@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影の彼方の希望(Hope Beyond the Shadows)</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <section id="world" class="content-section" data-aos="fade-left">
+    <img src="images/world.png">
+    <div class="text">
+      <h1>影の彼方の希望 - Hope Beyond the Shadows -</h1>
+      <p>　星々が煌めく夜空の下、荒廃した地上には破滅の軌跡が刻まれ、滅びの残滓が瓦礫の中に静かに佇んでいる。かつての知識と文明の輝きは忘れ去られ、人々は慟哭と苦難の中で繰り返される日々に耐えている。</p>
+      <p>　しかし、その闇の中にも、灯火のように揺らめく一筋の希望が存在する。この物語の糸を紡ぐのは、希望の煌めきを纏った少女たち。彼女たちには異なる才能や力が宿り、荒れ果てた大地で互いの光を頼りに生き抜いてゆく。</p>
+    </div>
+  </section>
+
+  <section id="servants-of-shadows" class="content-section" data-aos="fade-right" data-aos-offset="300">
+    <div class="text">
+      <h2>銀の記憶 - Silver Memories -</h2>
+      <p>　星の光のように輝くかつての文明の知識や技術を継承し、再び蘇らせることを目指す組織。彼らは崩壊後の世界で唯一の光とされている。</p>
+      <p>　盟主のセラフィーヌ・アルカディアは銀髪に翡翠色の瞳を持つ美しい女性で、古代文明の魔法機械の研究者として名を馳せている。好奇心旺盛で研究熱心な性格の持ち主であり、つい周囲を巻き込んでしまうことも。</p>
+    </div>
+    <img src="images/silver.png">
+  </section>
+
+  <section id="servants-of-shadows" class="content-section" data-aos="fade-left" data-aos-offset="300">
+    <img src="images/shadow.png">
+    <div class="text">
+      <h2>影の従者 - Servants of Shadows -</h2>
+      <p>　銀の記憶に対抗する組織で、自然の摂理と共生する新たな世界を創造することを目指している。彼らは人類の過ちから生じた過去の破滅を繰り返さないため、現存する文明の残滓を払拭しようとしている。</p>
+      <p>　頭領のセツナ・アビスウォーカーは長い黒髪と深紅の瞳を持ち、身の丈もある野太刀を自在に操る剣客として恐れられている。無口で物静かな性格だが、熱い情熱を秘めている。</p>
+    </div>
+  </section>
+
+  <section id="guardians-of-innocence" class="content-section" data-aos="fade-right" data-aos-offset="300">
+    <div class="text">
+      <h2>無垢の守護者 - Guardians of Innocence -</h2>
+      <p>　銀の記憶から派生した組織で、煌めく希望を纏った少女たちを保護し、彼女たちが持つ特別な力を発揮できるようにサポートする組織。過去の遺物に頼らず、少女たちの力を用用いて荒廃した世界に新たな希望をもたらすことで、人々に喜びと平和を取り戻させることを目指している。</p>
+      <p>　指導者のアウローラ・ムーンレイは金色の髪に蒼い瞳を持ち、魅力的でカリスマ性に溢れる女性である。一見、優しく穏やかな性格に見えるが、実は大胆で行動力に富んでいる。</p>
+    </div>
+    <img src="images/guardians.png">
+  </section>
+  <script>
+    AOS.init({
+        delay: 200, // アニメーションの遅延をミリ秒単位で指定
+        duration: 2000, // アニメーションの持続時間をミリ秒単位で指定
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const bodyHeight = document.body.scrollHeight;
+      const particles = document.getElementById("particles-js");
+      particles.style.height = bodyHeight + "px";
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80 },
+          color: { value: '#ffffff' },
+          shape: { type: 'circle' },
+          opacity: { value: 0.7 },
+          size: { value: 3 },
+          line_linked: { enable: true },
+          move: { speed: 3 }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

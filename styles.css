@@ -1,0 +1,64 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  background-image: url(images/background.png);
+  background-repeat: repeat;
+  
+}
+
+.content-section {
+  color: #fff;
+  margin: 2em auto;
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  flex-wrap: wrap;
+}
+
+.content-section img {
+  max-width: 70%;
+  height: auto;
+  width: 45%;
+  height: 50%;
+}
+
+.content-section .text {
+  width: 50%;
+  padding: 0 15px;
+}
+
+h1, h2 {
+  font-size: 180%;
+  font-family: "CustomFont", sans-serif;
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 150%;
+  font-family: "CustomFont", sans-serif;
+  margin: 0.2em;
+}
+
+.flex-container {
+  display: flex;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/font.otf");
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+}
